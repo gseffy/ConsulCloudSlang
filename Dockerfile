@@ -6,9 +6,6 @@ ADD https://github.com/CloudSlang/cloud-slang/releases/download/cloudslang-0.7.1
 RUN unzip /tmp/slang.zip && rm /tmp/slang.zip && chmod +x /cslang/cslang/bin/*
 ENV PATH /cslang/cslang/bin:${PATH}
 
-ADD http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7-rc2/jython-standalone-2.7-rc2.jar /cslang/cslang/lib/jython-standalone-2.7-rc2.jar
-RUN rm /cslang/cslang/lib/jython-standalone-2.7-b3.jar
-
 ENV JAVA_VERSION_MAJOR 7
 ENV JAVA_VERSION_MINOR 65
 ENV JAVA_VERSION_BUILD 17
