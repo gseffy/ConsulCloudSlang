@@ -12,5 +12,5 @@
                       "state": "warning",
                       "handler": "sh /consul.d/clearDiskSpace.sh"
                  }
-        ]
+        ]        
 }

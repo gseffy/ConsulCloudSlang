@@ -2,11 +2,11 @@
 FROM 		progrium/consul
 MAINTAINER 	Jeff Lindsay <progrium@gmail.com>
 
-ADD https://github.com/CloudSlang/cloud-slang/releases/download/cloudslang-0.7.3/cslang-cli.zip /tmp/slang.zip
+ADD https://github.com/CloudSlang/cloud-slang/releases/download/cloudslang-0.7.15/cslang-cli.zip /tmp/slang.zip
 RUN unzip /tmp/slang.zip && rm /tmp/slang.zip && chmod +x /cslang/cslang/bin/*
 ENV PATH /cslang/cslang/bin:${PATH}
 
-ADD http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7-b4/jython-standalone-2.7-b4.jar /cslang/cslang/lib/jython-standalone-2.7-b4.jar
+ADD http://search.maven.org/remotecontent?filepath=org/python/jython-standalone/2.7-rc2/jython-standalone-2.7-rc2.jar /cslang/cslang/lib/jython-standalone-2.7-rc2.jar
 RUN rm /cslang/cslang/lib/jython-standalone-2.7-b3.jar
 
 ENV JAVA_VERSION_MAJOR 7
@@ -46,3 +46,4 @@ RUN curl -kLOH "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=ac
 ENV JAVA_HOME /opt/jdk
 ENV PATH ${PATH}:${JAVA_HOME}/bin
 
+WORKDIR /cslang/cslang/bin
