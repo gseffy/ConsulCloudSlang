@@ -28,6 +28,5 @@ echo 0
 exit 0 
 ```  
 you can choose any usedthreshold between 0-100% </p>
-4. Add script to run slang consul.d/clearDiskSpace.sh 
-
-5. Run consul
+4. jkgjghj
+5. ghjghjgj
