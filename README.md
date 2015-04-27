@@ -27,8 +27,8 @@ done
 echo 0
 exit 0 
 ``` 
-        you can choose any usedthreshold between 0-100%
-   </p>
+you can choose any usedthreshold between 0-100%
+</p>
 4. Add script to run slang consul.d/clearDiskSpace.sh 
 `cslang run --f /cslang/content/io/cloudslang/docker/images/clear_docker_images_flow.sl --i docker_host=docker_host,docker_username=docker_username,docker_password=docker_password,private_key_file=/consul.d/xxxx.pem --cp /cslang/content/io/cloudslang/`
   * docker_host- the docker machine IP
