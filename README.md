@@ -37,5 +37,6 @@ exit 0
 5. <p>Run consul `docker run -p 8400:8400 -p 8500:8500 -p 8600:53/udp -v **PATHֹTOCONSUL.D/consul.d:/consul.d -h node1 gseffy/consulcloudslang -server -bootstrap -ui-dir /ui -config-dir /consul.d`
 <p>
         * **PATHֹTOCONSUL.D the path to consul.d folder created on step 1 on the machine
-        * now a new container is created and consul is running</p>
+        * now a new container is created and consul is running
+</p>
         </p>
