@@ -14,7 +14,7 @@ To run the demo on the docker machine:
 
 3. Add script to test the disk space consul.d/FS_monitor.sh 
 ``` bash
-`let usedthreshold=5
+let usedthreshold=5
 for free in `df | grep -v -e "/boot" -e "/dev/shm" -e "Used" | awk '{print $5}' | cut -d"%" -f1`
 do
         if [ $free -ge $usedthreshold ]
@@ -24,7 +24,7 @@ do
         fi
 done
 echo 0
-exit 0 `
+exit 0 
 ``` 
 
 4. Add script to run slang consul.d/clearDiskSpace.sh `cslang run --f /cslang/content/io/cloudslang/docker/images/clear_docker_images_flow.sl --i docker_host=docker_host,docker_username=docker_username,docker_password=docker_password,private_key_file=/consul.d/xxxx.pem --cp /cslang/content/io/cloudslang/`
