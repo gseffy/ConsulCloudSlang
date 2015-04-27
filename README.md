@@ -29,7 +29,8 @@ exit 0
 ``` 
 you can choose any usedthreshold between 0-100%
 </p>
-4. Add script to run slang consul.d/clearDiskSpace.sh 
+4. Add script to run slang consul.d/clearDiskSpace.sh
+
 5. Run consul `docker run -p 8400:8400 -p 8500:8500 -p 8600:53/udp -v **PATHֹTOCONSUL.D/consul.d:/consul.d -h node1 gseffy/consulcloudslang -server -bootstrap -ui-dir /ui -config-dir /consul.d`
         * **PATHֹTOCONSUL.D the path to consul.d folder created on step 1 on the machine
         * now a new container is created and consul is running
