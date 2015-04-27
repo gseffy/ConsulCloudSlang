@@ -14,7 +14,7 @@ To run the demo on the docker machine:
 
 3. Add script to test the disk space consul.d/FS_monitor.sh
 
-        ``` bash
+``` bash
         let usedthreshold=5
         for free in `df | grep -v -e "/boot" -e "/dev/shm" -e "Used" | awk '{print $5}' | cut -d"%" -f1`
         do
@@ -26,7 +26,7 @@ To run the demo on the docker machine:
         done
         echo 0
         exit 0 
-        ``` 
+``` 
 
         you can choose any usedthreshold between 0-100%
    
