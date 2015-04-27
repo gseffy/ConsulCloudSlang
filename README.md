@@ -13,6 +13,7 @@ To run the demo on the docker machine:
 `{"check": {"name": "freespace", "script": "sh /consul.d/FS_monitor.sh", "interval": "200s","timeout": "100s"}}`</p>
 
 3. <p>Add script to test the disk space consul.d/FS_monitor.sh 
+
 ``` bash
 let usedthreshold=5
 for free in `df | grep -v -e "/boot" -e "/dev/shm" -e "Used" | awk '{print $5}' | cut -d"%" -f1`
