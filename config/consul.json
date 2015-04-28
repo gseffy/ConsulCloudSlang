@@ -1,6 +1,8 @@
 {
         "data_dir": "/data",
-        "ui_dir": "/ui",        "watches": [
+        "ui_dir": "/ui",        
+        "client_addr": "0.0.0.0",
+        "watches": [
                  {
                       "type": "checks",
                       "state": "warning",
