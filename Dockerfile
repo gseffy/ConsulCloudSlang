@@ -1,6 +1,5 @@
 
 FROM 		progrium/consul
-MAINTAINER 	Jeff Lindsay <progrium@gmail.com>
 
 ADD https://github.com/CloudSlang/cloud-slang/releases/download/cloudslang-0.7.15/cslang-cli.zip /tmp/slang.zip
 RUN unzip /tmp/slang.zip && rm /tmp/slang.zip && chmod +x /cslang/cslang/bin/*
